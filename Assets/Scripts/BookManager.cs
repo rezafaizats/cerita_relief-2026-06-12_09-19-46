@@ -33,6 +33,7 @@ namespace VridayStudio.Book
         {
             if(isAutoFlip) StartCoroutine(FlipBook(waitFlipDuration));
             if(bookMenu is null) throw new Exception("Book menu must not be null!");
+            Debug.Log("Current book page " + currentBook.currentPaper);
         }
 
         // Update is called once per frame
@@ -74,6 +75,7 @@ namespace VridayStudio.Book
             if(isOpeningBookPanel || !isInteractable) return;
 
             int currentPaper = currentBook.CurrentPaper;
+            Debug.Log("Current page : " + currentPaper);
             if(currentPaper >= pages[pages.Count - 2].pagesNumber) bookMenu.SetYoyoAnimation(true);
             if(currentPaper < pages[pages.Count - 1].pagesNumber) autoFlip.FlipRightPage();
             // else if(changeBookAfterEndPage) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex == 0 ? 1 : 0);
@@ -84,6 +86,15 @@ namespace VridayStudio.Book
 
             int currentPaper = currentBook.CurrentPaper;
             if(currentPaper > pages[0].pagesNumber) autoFlip.FlipLeftPage();
+        }
+
+        public void ResetBook()
+        {
+            int currentPaper = currentBook.CurrentPaper;
+            if (currentPaper == 0) return;
+
+            Debug.Log("Resetting book...");
+            FlipPreviousPage();
         }
 
         public void SetBookMenuVisibility(bool status) {
