@@ -210,6 +210,7 @@ namespace VridayStudio.Book
             if (allFingers.Contains(finger)) return;
             allFingers.Add(finger);
             isIdle = false;
+            touchStatus = true;
             currentIdleDuration = 0f;
             Debug.Log("Finger registered " + finger);
         }
