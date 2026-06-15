@@ -56,7 +56,7 @@ namespace VridayStudio.Book
             LeanTouch.OnFingerDown += RegisterFinger;
             LeanTouch.OnFingerUp += DeregisterFinger;
 
-            //LeanTouch.OnFingerUpdate += UIRaycaster;
+            LeanTouch.OnFingerUpdate += UIRaycaster;
 
             maxScreenSize.x = Screen.width;
             maxScreenSize.y = Screen.height;
@@ -73,12 +73,12 @@ namespace VridayStudio.Book
             LeanTouch.OnFingerDown -= RegisterFinger;
             LeanTouch.OnFingerUp -= DeregisterFinger;
 
-            //LeanTouch.OnFingerUpdate -= UIRaycaster;
+            LeanTouch.OnFingerUpdate -= UIRaycaster;
         }
 
         private void FixedUpdate()
         {
-            if (!isIdle && !isRestarting && book.currentBook.currentPaper == 0) return;
+            if (!isIdle || !isRestarting || book.currentBook.currentPaper == 0) return;
 
             currentIdleDuration += Time.deltaTime;
             if(currentIdleDuration >= idleDuration)
@@ -149,6 +149,7 @@ namespace VridayStudio.Book
             }
 
             if(results.Count > 0) {
+                Debug.Log("Touching UI " + results[0].gameObject.name);
                 if(!results[0].gameObject.TryGetComponent(out ITouchedObject touched)) {
                     touchDuration = 0f;
 
@@ -157,6 +158,7 @@ namespace VridayStudio.Book
                 }
                 else {
                     if(activeTouchObject == touched) {
+                        Debug.Log("Resetting active touched object.");
                         touchDuration += Time.deltaTime;
 
                         if(spawnedTouchProgressIndicator == null) {
@@ -170,6 +172,7 @@ namespace VridayStudio.Book
                         }
                     }
                     else if (activeTouchObject != touched) {
+                        Debug.Log("Registering active touched object.");
                         activeTouchObject = touched;
                         touchDuration = 0f;
 
@@ -177,6 +180,7 @@ namespace VridayStudio.Book
                             spawnedTouchProgressIndicator.gameObject.SetActive(false);
                     }
                     else {
+                        Debug.Log("Invoking active touched object.");
                         activeTouchObject.UIEvent?.Invoke();
 
                         touchDuration = 0f;
@@ -210,6 +214,7 @@ namespace VridayStudio.Book
             if (allFingers.Contains(finger)) return;
             allFingers.Add(finger);
             isIdle = false;
+            isRestarting = false;
             touchStatus = true;
             currentIdleDuration = 0f;
             Debug.Log("Finger registered " + finger);
@@ -224,20 +229,10 @@ namespace VridayStudio.Book
 
             if(allFingers.Count == 0)
             {
-                isRestarting = false;
+                isRestarting = true;
                 isIdle = true;
                 Debug.Log("Finger empty!");
             }
-        }
-
-        private IEnumerator ResetPage()
-        {
-            isRestarting = true;
-            touchStatus = false;
-            yield return new WaitForSeconds(idleDuration);
-            book.ResetBook();
-            isRestarting = false;
-            touchStatus = true;
         }
 
         public IEnumerator PauseTouch(float duration = 2f) {
