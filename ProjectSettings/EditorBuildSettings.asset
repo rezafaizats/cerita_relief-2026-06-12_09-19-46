@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CeritaRelief.unity
     guid: 40874b7ff4098ea4283b311ccae83933
+  - enabled: 1
+    path: Assets/Scenes/CeritaRelief 2.unity
+    guid: 6599c43e3daec5b47b3b5f878db40acf
   m_configObjects: {}

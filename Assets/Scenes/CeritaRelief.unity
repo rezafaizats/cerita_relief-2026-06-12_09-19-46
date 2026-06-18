@@ -10240,10 +10240,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1326450808}
     m_Modifications:
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972081626217197, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1425972082020363586, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4038215488163839659}
+    - target: {fileID: 1425972082020363588, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287252, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: targetScene
+      value: CeritaRelief 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425972082328287336, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1425972082806845086, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
       propertyPath: m_Name
       value: BookMenu
@@ -10332,10 +10388,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1425972082898596024, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1425972082969373890, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4038215488163839659}
+    - target: {fileID: 1425972082969373892, guid: 12d9c617169b60440901b2aa32fc8b67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
