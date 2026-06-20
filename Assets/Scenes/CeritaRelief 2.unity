@@ -433,6 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54235025}
   - component: {fileID: 54235026}
+  - component: {fileID: 54235027}
   m_Layer: 0
   m_Name: Page10
   m_TagString: Untagged
@@ -481,6 +482,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &54235027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54235024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1650831015}
 --- !u!1 &58730373
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58730375}
   - component: {fileID: 58730374}
+  - component: {fileID: 58730376}
   m_Layer: 0
   m_Name: Page16
   m_TagString: Untagged
@@ -539,6 +554,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58730376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58730373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1840084115}
 --- !u!1 &59524926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,7 +1170,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -1314,6 +1342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 162438889}
   - component: {fileID: 162438888}
+  - component: {fileID: 162438890}
   m_Layer: 0
   m_Name: Page20
   m_TagString: Untagged
@@ -1362,6 +1391,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &162438890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162438887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1880240257}
 --- !u!1 &179696750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1666,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -2423,7 +2465,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -2974,7 +3016,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -3271,7 +3313,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -3958,26 +4000,48 @@ MonoBehaviour:
   pages:
   - pagesNumber: 0
     pageSequences: {fileID: 7567437540964198679}
+    pageLeft: {fileID: 894223802}
+    pageRight: {fileID: 7567437540964198680}
   - pagesNumber: 1
     pageSequences: {fileID: 7691956281829332935}
+    pageLeft: {fileID: 3211354138218841088}
+    pageRight: {fileID: 7691956281829332936}
   - pagesNumber: 2
     pageSequences: {fileID: 6255148693533383152}
+    pageLeft: {fileID: 8448525210633856183}
+    pageRight: {fileID: 6255148693533383153}
   - pagesNumber: 3
     pageSequences: {fileID: 2786152932201160027}
+    pageLeft: {fileID: 3931141930894166768}
+    pageRight: {fileID: 2786152932201160028}
   - pagesNumber: 4
     pageSequences: {fileID: 1659023173}
+    pageLeft: {fileID: 1908231998244950449}
+    pageRight: {fileID: 1659023174}
   - pagesNumber: 5
     pageSequences: {fileID: 54235026}
+    pageLeft: {fileID: 2121057551}
+    pageRight: {fileID: 54235027}
   - pagesNumber: 6
     pageSequences: {fileID: 1065893384}
+    pageLeft: {fileID: 1448194047}
+    pageRight: {fileID: 1065893386}
   - pagesNumber: 7
     pageSequences: {fileID: 824623369}
+    pageLeft: {fileID: 1897810799}
+    pageRight: {fileID: 824623371}
   - pagesNumber: 8
     pageSequences: {fileID: 58730374}
+    pageLeft: {fileID: 1879195303}
+    pageRight: {fileID: 58730376}
   - pagesNumber: 9
     pageSequences: {fileID: 1818256283}
+    pageLeft: {fileID: 1993975642}
+    pageRight: {fileID: 1818256285}
   - pagesNumber: 10
-    pageSequences: {fileID: 1818256283}
+    pageSequences: {fileID: 162438888}
+    pageLeft: {fileID: 816671559}
+    pageRight: {fileID: 162438890}
   isAutoFlip: 0
   changeBookAfterEndPage: 1
   isInteractable: 1
@@ -4370,7 +4434,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -4718,6 +4782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 816671558}
   - component: {fileID: 816671557}
+  - component: {fileID: 816671559}
   m_Layer: 0
   m_Name: Page19
   m_TagString: Untagged
@@ -4766,6 +4831,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816671559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816671556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1250315363}
 --- !u!1 &824623368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4776,6 +4854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 824623370}
   - component: {fileID: 824623369}
+  - component: {fileID: 824623371}
   m_Layer: 0
   m_Name: Page14
   m_TagString: Untagged
@@ -4824,6 +4903,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824623371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824623368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 867083696}
 --- !u!1 &826972893
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,7 +5330,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -5413,6 +5505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894223801}
   - component: {fileID: 894223800}
+  - component: {fileID: 894223802}
   m_Layer: 0
   m_Name: Cover_Left
   m_TagString: Untagged
@@ -5461,6 +5554,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894223802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894223799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1105838671}
 --- !u!1 &963584515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,7 +5702,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -5664,7 +5770,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -6252,6 +6358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065893385}
   - component: {fileID: 1065893384}
+  - component: {fileID: 1065893386}
   m_Layer: 0
   m_Name: Page12
   m_TagString: Untagged
@@ -6300,6 +6407,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065893386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065893383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1406647375}
 --- !u!1 &1086548808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,7 +6726,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -6674,7 +6794,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -6971,7 +7091,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -7752,7 +7872,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -7841,6 +7961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448194045}
   - component: {fileID: 1448194046}
+  - component: {fileID: 1448194047}
   m_Layer: 0
   m_Name: Page11
   m_TagString: Untagged
@@ -7889,6 +8010,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &1448194047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448194044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1484338942}
 --- !u!1 &1472402390
 GameObject:
   m_ObjectHideFlags: 0
@@ -8078,7 +8212,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -8679,7 +8813,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -8747,7 +8881,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -8815,7 +8949,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -8831,6 +8965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659023172}
   - component: {fileID: 1659023173}
+  - component: {fileID: 1659023174}
   m_Layer: 0
   m_Name: Page8
   m_TagString: Untagged
@@ -8879,6 +9014,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &1659023174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659023171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 974185839}
 --- !u!1 &1695690748
 GameObject:
   m_ObjectHideFlags: 0
@@ -9640,7 +9788,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -9867,6 +10015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818256284}
   - component: {fileID: 1818256283}
+  - component: {fileID: 1818256285}
   m_Layer: 0
   m_Name: Page18
   m_TagString: Untagged
@@ -9915,6 +10064,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818256285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818256282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 2064109899}
 --- !u!1 &1818270498
 GameObject:
   m_ObjectHideFlags: 0
@@ -10226,7 +10388,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -10578,6 +10740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879195302}
   - component: {fileID: 1879195301}
+  - component: {fileID: 1879195303}
   m_Layer: 0
   m_Name: Page15
   m_TagString: Untagged
@@ -10626,6 +10789,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1879195303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879195300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1778065619}
 --- !u!1 &1880240255
 GameObject:
   m_ObjectHideFlags: 0
@@ -10688,7 +10864,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -10807,6 +10983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1897810798}
   - component: {fileID: 1897810797}
+  - component: {fileID: 1897810799}
   m_Layer: 0
   m_Name: Page13
   m_TagString: Untagged
@@ -10855,6 +11032,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897810799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897810796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1104560191}
 --- !u!1 &1901414990
 GameObject:
   m_ObjectHideFlags: 0
@@ -11333,6 +11523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1993975641}
   - component: {fileID: 1993975640}
+  - component: {fileID: 1993975642}
   m_Layer: 0
   m_Name: Page17
   m_TagString: Untagged
@@ -11381,6 +11572,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1993975642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993975639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1581960984}
 --- !u!1 &2004522641
 GameObject:
   m_ObjectHideFlags: 0
@@ -11809,7 +12013,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -11877,7 +12081,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -12269,6 +12473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2121057549}
   - component: {fileID: 2121057550}
+  - component: {fileID: 2121057551}
   m_Layer: 0
   m_Name: Page9
   m_TagString: Untagged
@@ -12317,6 +12522,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &2121057551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121057548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 118397974}
 --- !u!1 &2122488591
 GameObject:
   m_ObjectHideFlags: 0
@@ -12583,6 +12801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908231998244950447}
   - component: {fileID: 1908231998244950448}
+  - component: {fileID: 1908231998244950449}
   m_Layer: 0
   m_Name: Page7
   m_TagString: Untagged
@@ -12631,6 +12850,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &1908231998244950449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908231998244950444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 221620977}
 --- !u!1 &2786152932201160025
 GameObject:
   m_ObjectHideFlags: 0
@@ -12641,6 +12873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2786152932201160026}
   - component: {fileID: 2786152932201160027}
+  - component: {fileID: 2786152932201160028}
   m_Layer: 0
   m_Name: Page6
   m_TagString: Untagged
@@ -12689,6 +12922,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &2786152932201160028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786152932201160025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 350446971}
 --- !u!20 &2786152934196894220
 Camera:
   m_ObjectHideFlags: 0
@@ -12800,6 +13046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3211354138218841085}
   - component: {fileID: 3211354138218841087}
+  - component: {fileID: 3211354138218841088}
   m_Layer: 0
   m_Name: Page1
   m_TagString: Untagged
@@ -12830,6 +13077,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &3211354138218841088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211354138218841086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 399384899}
 --- !u!4 &3931141930894166765
 Transform:
   m_ObjectHideFlags: 0
@@ -12858,6 +13118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3931141930894166765}
   - component: {fileID: 3931141930894166767}
+  - component: {fileID: 3931141930894166768}
   m_Layer: 0
   m_Name: Page5
   m_TagString: Untagged
@@ -12888,6 +13149,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &3931141930894166768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931141930894166766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 673986478}
 --- !u!1 &3931141930912422144
 GameObject:
   m_ObjectHideFlags: 0
@@ -13095,6 +13369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6255148693533383150}
   - component: {fileID: 6255148693533383152}
+  - component: {fileID: 6255148693533383153}
   m_Layer: 0
   m_Name: Page4
   m_TagString: Untagged
@@ -13125,6 +13400,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &6255148693533383153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6255148693533383151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 2074434570}
 --- !u!4 &7567437540964198673
 Transform:
   m_ObjectHideFlags: 0
@@ -13153,6 +13441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7567437540964198673}
   - component: {fileID: 7567437540964198679}
+  - component: {fileID: 7567437540964198680}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -13183,6 +13472,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &7567437540964198680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567437540964198678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 1550674885}
 --- !u!4 &7691956281829332933
 Transform:
   m_ObjectHideFlags: 0
@@ -13211,6 +13513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7691956281829332933}
   - component: {fileID: 7691956281829332935}
+  - component: {fileID: 7691956281829332936}
   m_Layer: 0
   m_Name: Page2
   m_TagString: Untagged
@@ -13241,6 +13544,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &7691956281829332936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691956281829332934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 997874099}
 --- !u!20 &7691956282825037836
 Camera:
   m_ObjectHideFlags: 0
@@ -13352,6 +13668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8448525210633856180}
   - component: {fileID: 8448525210633856182}
+  - component: {fileID: 8448525210633856183}
   m_Layer: 0
   m_Name: Page3
   m_TagString: Untagged
@@ -13382,6 +13699,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+--- !u!114 &8448525210633856183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448525210633856181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a448836b5198045ba4e0e8734c848d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageVideoPlayer: {fileID: 483416540}
 --- !u!1 &8448525211590196840
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,8 @@ namespace VridayStudio.Book
         [Serializable] public class PagesInNumber {
             public int pagesNumber;
             public SequenceController pageSequences;
+            public PageController pageLeft;
+            public PageController pageRight;
         }
 
         // Start is called before the first frame update
@@ -75,17 +77,29 @@ namespace VridayStudio.Book
             if(isOpeningBookPanel || !isInteractable) return;
 
             int currentPaper = currentBook.CurrentPaper;
-            Debug.Log("Current page : " + currentPaper);
-            if(currentPaper >= pages[pages.Count - 2].pagesNumber) bookMenu.SetYoyoAnimation(true);
+            pages[currentPaper].pageLeft.StopVideo();
+            pages[currentPaper].pageRight.StopVideo();
+            if (currentPaper >= pages[pages.Count - 2].pagesNumber) bookMenu.SetYoyoAnimation(true);
             if(currentPaper < pages[pages.Count - 1].pagesNumber) autoFlip.FlipRightPage();
+            currentPaper = currentBook.CurrentPaper;
+            pages[currentPaper].pageLeft.StartVideo();
+            pages[currentPaper].pageRight.StartVideo();
             // else if(changeBookAfterEndPage) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex == 0 ? 1 : 0);
         }
 
         public void FlipPreviousPage() {
             if(isOpeningBookPanel || !isInteractable) return;
 
+            Debug.Log("Flip Previous Page.");
             int currentPaper = currentBook.CurrentPaper;
+            Debug.Log("Previous page " + currentPaper);
+            pages[currentPaper].pageLeft.StopVideo();
+            pages[currentPaper].pageRight.StopVideo();
             if(currentPaper > pages[0].pagesNumber) autoFlip.FlipLeftPage();
+            Debug.Log("current page " + currentPaper);
+            currentPaper = currentBook.CurrentPaper;
+            pages[currentPaper - 1].pageLeft.StartVideo();
+            pages[currentPaper - 1].pageRight.StartVideo();
         }
 
         public void ResetBook()
